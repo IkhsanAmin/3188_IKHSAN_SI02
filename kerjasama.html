@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="kerjasama.css">
+    <link rel="shortcut icon" href="asset/logo.png" type="image/jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- NAMA : IKHSAN NOOR AMIN 
+    NIM : 24.12.3188
+    KELAS : SI02
+    PENGERJAAN DIMULAI PADA TANGGAL : 18/19/20 MEI 2025 -->
+
+</head>
+<body>
+    <header>
+        <div class="judul">FORM KERJASAMA</div>
+        <div class="home-nav">
+            <a href="index.html">Home</a>
+            <a href="eduskills.html">Education & Skills</a>
+        </div>
+    </header>
+    <h2 class="judul-form">Formulir Penawaran Kerjasama</h2>
+    <form>
+        <table border="2">
+            <tr>
+                <td>Nama</td>
+                <td><input type="text" name="nama" placeholder="Nama"></td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="alamat" id="" placeholder="Masukkan Alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td>No. WA</td>
+                <td><input type="text" name="wa" placeholder="Nomor WhatsApp"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" placeholder="Masukkan Email"></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td><input type="radio" name="jenis_kelamin" value="Laki-Laki"> Laki-Laki
+                    <input type="radio" name="jenis_kelamin" value="Perempuan"> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Bidang Kerjasama</td>
+                <td>
+                    <input type="checkbox" name="bidang" value="Multimedia"> Multimedia
+                    <input type="checkbox" name="bidang" value="Web Dev"> Web Dev
+                    <input type="checkbox" name="bidang" value="Fintech"> Fintech
+                </td>
+            </tr>
+            <tr>
+                <td>File Penawaran</td>
+                <td><input type="file" name="penawaran"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Pelaksanaan</td>
+                <td><input type="datetime-local" name="tgl_pelaksanaan"></td>
+            </tr>
+            <tr>
+                <td>Domisili</td>
+                <td><select name="domisili">
+                    <option>--Pilih Domisili--</option>
+                    <option>D.I Yogyakarta</option>
+                    <option>Palangka Raya</option>
+                    <option>Medan</option>
+                    <option>Jakarta</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <div class="form-btn">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+    <footer>
+    <div class="foot-end">
+        <h3>Contact Person</h3>
+        <a href="ikhsannooramin12@students.amikom.ac.id"><i class="fa-solid fa-envelope"></i> ikhsannooramin12@students.amikom.ac.id</a>
+        <a href="+6281260527708"><i class="fa-solid fa-phone"></i> +62 812-6052-7708</a>
+    </div>
+    </footer>
+</body>
+</html>

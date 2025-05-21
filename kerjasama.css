@@ -1,0 +1,166 @@
+/* NAMA : IKHSAN NOOR AMIN
+NIM : 24.12.3188
+KELAS : SI02
+TANGGAL PEMBUATAN : 18/19/20 MEI 2025*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#00467f, #bfe2ff);
+    color: #bfe2ff;
+    font-family: Poppins ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0,37);
+    border: 2px solid rgba(255, 255, 255, 0,18);
+}
+
+.judul {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.home-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.home-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #bfe2ff;
+}
+
+.home-nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    border: 1px solid #000;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.judul-form {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    color: white;
+}
+td {
+    padding: 8px;
+    vertical-align: top;
+}
+input[type="text"], input[type="email"], input[type="datetime-local"], input[type="file"], textarea ,select {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #bfe2ff;
+}
+
+.form-btn {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.form-btn input {
+    margin: 0 10px;
+    font-size: 15px;
+    background-color: #0064b5;
+    color: white;
+}
+
+.form-btn input:hover {
+    background-color: #00467f;
+    color: white;
+    transform: scale(0.9);
+}
+
+footer {
+    margin-top: 100px;
+    text-align: left;
+    padding: 15px 40px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0,37);
+    border: 2px solid rgba(255, 255, 255, 0,18);
+    color: #fff;
+}
+
+.foot-end h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.foot-end a {
+    color: #00467f;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.foot-end a i {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+    }
+    header, footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .home-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    input[type="text"], input[type="email"], input[type="datetime-local"], input[type="file"], textarea, select {
+        width: 100%;
+    }
+
+    .form-btn input {
+        width: 100px;
+        margin: 10px 0;
+    }
+}

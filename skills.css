@@ -1,0 +1,198 @@
+/* NAMA : IKHSAN NOOR AMIN
+NIM : 24.12.3188
+KELAS : SI02
+TANGGAL PEMBUATAN : 18/19/20 MEI 2025*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#00467f, #bfe2ff);
+    color: #bfe2ff;
+    font-family: Poppins ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0,37);
+    border: 2px solid rgba(255, 255, 255, 0,18);
+    margin-bottom: 50px;
+}
+
+.judul {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.home-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.home-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #bfe2ff;
+}
+
+.home-nav a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+h2 {
+    color: #bfe2ff;
+    padding-bottom: 10px;
+    margin-left: 15px;
+}
+.timeline {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #bfe2ff;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+}
+.container {
+    padding: 10px 40px;
+    position: relative;
+    width: 80%;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.container::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 4px solid #4CAF50;
+    border-radius: 50%;
+}
+
+.edu-place {
+    font-style: bold;
+    margin-bottom: 5px;
+}
+.list-skill {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.item-skill {
+    background-color: #0064b5;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.item-skill:hover {
+    transform: translateY(-5px);
+}
+
+.icon-skill {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.nama-skill {
+    color: #bfe2ff ;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+footer {
+    margin-top: 155px;
+    text-align: left;
+    padding: 15px 40px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0,37);
+    border: 2px solid rgba(255, 255, 255, 0,18);
+    color: #fff;
+}
+
+.foot-end h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.foot-end a {
+    color: #00467f;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.foot-end a i {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto;
+    }
+    header, footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+
+    .home-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skill-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 90%;
+    }
+
+    .container {
+        width: 90%;
+        margin-left: 10px;
+        padding: 10px 20px;
+    }
+
+    .timeline::after {
+        left: 10px;
+    }
+}

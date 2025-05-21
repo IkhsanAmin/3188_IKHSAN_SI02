@@ -1,0 +1,234 @@
+/* NAMA : IKHSAN NOOR AMIN
+NIM : 24.12.3188
+KELAS : SI02
+TANGGAL PEMBUATAN : 18/19/20 MEI 2025*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#00467f, #bfe2ff);
+    color: #bfe2ff;
+    font-family: Poppins ;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0,37);
+    border: 2px solid rgba(255, 255, 255, 0,18);
+}
+
+.judul {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.home-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.home-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #bfe2ff;
+}
+
+.home-nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+    max-width: 1000px;
+}
+
+.content-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;     
+}
+
+.content-photo img {
+    width: 200px;
+    height: 300px;
+    border-radius: 30%;
+    object-fit: cover;
+    border: 4px solid #2196F3;
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 250px;
+}
+
+.head-sec {
+    margin-bottom: 10px;
+}
+
+.head-sec h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.head-sec h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.isi-sec {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.sosmed-sec {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.sosmed-sec a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background-color: #2196F3;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.sosmed-sec a:hover {
+    background-color: #1976d2;
+}
+
+.btn h3 {
+    color: white;
+}
+
+.btn a {
+    margin-top: 10px;
+	background-color: #2196F3;
+	border-radius: 28px;
+	display: inline-block;
+	cursor: pointer;
+	color: white;
+	font-size: 17px;
+	padding: 16px 31px;
+	text-decoration: none;
+}
+
+.btn a:hover {
+    background-color: #1976d2;
+    transform: scale(0.9);
+}
+
+.foto-vid {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.foto-vid img {
+    height: 300px;
+    border: 4px solid #2196F3;
+    margin: auto;
+}
+
+.foto-vid iframe {
+    height: 300px;
+    border: 4px solid #2196F3;
+    margin: auto;
+}
+
+footer {
+    text-align: left;
+    padding: 15px 40px;
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 0px 30px rgba(227, 228, 237, 0,37);
+    border: 2px solid rgba(255, 255, 255, 0,18);
+    color: #fff;
+}
+
+.foot-end h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.foot-end a {
+    color: #00467f;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.foot-end a i {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header, footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+    }
+    .home-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .foto-vid {
+        flex-direction: column;
+    }
+    .foto-vid img, .foto-vid iframe {
+        width: 100%;
+        height: auto;
+    }
+    .btn a {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
